@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+    <title>Round 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+      <script src="https://kit.fontawesome.com/ef3dc2cd8f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   <h1 id="sagnik"> Time-Pow ⏰</h1>
+   <figure class="clock">
+      <div class="mins">0</div>
+      <div>:</div>
+      <div class="secs">00</div>
+      <audio
+        src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+      ></audio>
+      <svg class="progress-ring" height="120" width="120">
+        <circle
+          class="progress-ring__circle"
+          stroke-width="8"
+          fill="transparent"
+          r="50"
+          cx="60"
+          cy="60"
+        />
+      </svg>
+    </figure>
+
+    <div class="btn-group">
+
+      <button class="start far fa-play-circle" > start session</button>
+      <button class="reset fas fa-sync-alt" > reset</button>
+      <button class="pause fas fa-pause-circle"> pause</button>
+    </div>
+
+
+
+
+
+
+      <form action="." class="pomodoro">
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row"><p>Session length<p></div>
+        <div class="row counter">
+
+
+          <input type="number" value="1" id="focusTime" />
+
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row"><p>Break length<p></div>
+        <div class="row counter">
+
+
+          <input type="number" value="1" id="breakTime" />
+
+        </div>
+      </div>
+      <button type="submit" class="far fa-save"> Set The Time</button>
+
+
+
+  </form>
+    <script src="settings.js"></script>
+    <script src="timer.js"></script>
+    <script src="progress.js"></script>
+  </body>
+</html>
